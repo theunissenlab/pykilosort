@@ -213,4 +213,3 @@ def np2_4shank_probe(shank=None):
     probe.kcoords = np.zeros(96)
 
     return probe
-
