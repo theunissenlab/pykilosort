@@ -373,7 +373,7 @@ class RawDataLoader(object):
                     0, sub_length / TAPER_LENGTH * np.pi/2, sub_length
                 ))
                 sub_batch_1[:sub_length] = \
-                    (sub_batch_0[:sub_length] * taper_window.reshape(-1,1)).astype('int16')
+                    (sub_batch_1[:sub_length] * taper_window.reshape(-1,1)).astype('int16')
 
                 return np.concatenate((sub_batch_0, sub_batch_1), axis=0)
 
